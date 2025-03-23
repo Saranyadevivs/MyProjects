@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Payment</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+    <link rel="stylesheet" href="feesstyles.css" />
+  </head>
+  <body>
+    <!-- Payment Card -->
+    <div class="card">
+      <h2>Secure Payment</h2>
+      <form id="paymentForm">
+        <!-- Payment Methods -->
+        <div class="payment-method-selection">
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="creditCard"
+            id="creditCard"
+            checked
+          />
+          <label for="creditCard">Credit Card</label>
+
+          <input type="radio" name="paymentMethod" value="paypal" id="paypal" />
+          <label for="paypal">PayPal</label>
+
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="googlePay"
+            id="googlePay"
+          />
+          <label for="googlePay">Google Pay</label>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="payment-details" id="paymentDetails">
+          <input
+            type="text"
+            id="cardNumber"
+            placeholder="Card Number"
+            required
+          />
+          <input
+            type="text"
+            id="expiryDate"
+            placeholder="Expiry Date (MM/YY)"
+            required
+          />
+          <input type="text" id="cvv" placeholder="CVV" required />
+        </div>
+
+        <!-- Pay Button -->
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const paymentMethods = document.querySelectorAll(
+          'input[name="paymentMethod"]'
+        );
+        const paymentDetails = document.getElementById("paymentDetails");
+
+        paymentMethods.forEach((method) => {
+          method.addEventListener("change", function () {
+            updatePaymentFields(this.value);
+          });
+        });
+
+        function updatePaymentFields(paymentType) {
+          paymentDetails.innerHTML = ""; // Clear previous fields
+
+          if (paymentType === "creditCard") {
+            paymentDetails.innerHTML = `
+                        <input type="text" id="cardNumber" placeholder="Card Number" required />
+                        <input type="text" id="expiryDate" placeholder="Expiry Date (MM/YY)" required />
+                        <input type="text" id="cvv" placeholder="CVV" required />
+                    `;
+          } else {
+            paymentDetails.innerHTML = `
+                        <input type="text" id="upiId" placeholder="Enter UPI ID" required />
+                    `;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align with navbar */
+  padding-top: 100px; /* Space for fixed navbar */
+  background: white;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #3b82f6, #6a0dad);
+  padding: 15px 40px;
+  height: 90px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar img {
+  height: 70px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #e07a00;
+}
+
+.inquiry-button {
+  background-color: #fca311;
+  color: rgb(47, 62, 136);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inquiry-button:hover {
+  background-color: #e07a00;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px; /* Reduced width */
+  padding: 25px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #3b82f6, #6a0dad);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+  color: white;
+  font-size: 22px; /* Slightly smaller */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 13px; /* Adjusted for compactness */
+  color: white;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  margin: 6px 0; /* Reduced margin */
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px; /* Slightly smaller */
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2f3e88;
+  box-shadow: 0 0 5px rgba(47, 62, 136, 0.5);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px; /* Slightly smaller */
+  background: linear-gradient(135deg, #e03900, #fca311);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; /* Adjusted */
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1e2746, #0f172a);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

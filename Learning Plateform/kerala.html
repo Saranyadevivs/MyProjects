@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerala State Syllabus</title>
+    <link rel="stylesheet" href="kerala.css" />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <img src="pictures/logo.jpg" alt="Logo" />
+      <div class="nav-menu">
+        <a href="home.html" class="nav-item">HOME</a>
+        <div class="nav-item">CLASSES</div>
+        <div class="nav-item">DEMO VIDEOS</div>
+        <div class="nav-item">CAREERS</div>
+        <div class="nav-item">CONTACT US</div>
+        <div class="nav-item">CALL US</div>
+        <a href="fees.html" class="nav-item">FEES</a>
+        <a href="login.html" class="nav-item">LOGIN</a>
+        <a href="inquiry.html" class="inquiry-button">FOR INQUIRY</a>
+      </div>
+    </div>
+
+    <h2>Our Classes</h2>
+    <div class="class-container">
+      <div class="class-card">
+        VIII th Standard
+        <span><small>8th Standard</small></span>
+      </div>
+      <div class="class-card">
+        IX th Standard
+        <span><small>9th Standard</small></span>
+      </div>
+      <div class="class-card">
+        X th Standard
+        <span><small>10th Standard</small></span>
+      </div>
+      <div class="class-card">
+        XI th Standard
+        <span><small>11th Standard</small></span>
+      </div>
+      <div class="class-card">
+        XII th Standard
+        <span><small>12th Standard</small></span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Virtual Tuition</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-classes">
+          <h4>Our Classes</h4>
+          <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-inner">
+              <ul class="carousel-item">
+                <li><a href="#">CBSE Syllabus</a></li>
+                <li><a href="#">Kerala State Syllabus</a></li>
+                <li><a href="#">Madhya Pradesh State Syllabus</a></li>
+                <li><a href="#">Uttar Pradesh State Syllabus</a></li>
+                <li><a href="#">Karnataka State Syllabus</a></li>
+              </ul>
+              <ul class="carousel-item">
+                <li><a href="#">Delhi State Syllabus</a></li>
+                <li><a href="#">Assam State Syllabus</a></li>
+                <li><a href="#">Arunachal Pradesh State Syllabus</a></li>
+                <li><a href="#">Goa State Syllabus</a></li>
+                <li><a href="#">Haryana State Syllabus</a></li>
+              </ul>
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h4>Subscribe to our newsletter</h4>
+          <p>Stay updated with the latest news.</p>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+
+        <div class="footer-section follow-us">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="pictures/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="pictures/twitter.jpg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="pictures/instagram.avif" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-section payment-options">
+          <h4>Payment Options</h4>
+          <p>We accept secure online payments:</p>
+          <p>Paytm, UPI, Credit/Debit cards, Net Banking.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+        </ul>
+        <p>&copy; 2024 Tringle Virtual Academy. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let index = 0;
+    const items = document.querySelectorAll(".carousel-item");
+    function showSlide(n) {
+      items.forEach((item) => (item.style.display = "none"));
+      items[n].style.display = "block";
+    }
+    document.querySelector(".prev").addEventListener("click", () => {
+      index = index > 0 ? index - 1 : items.length - 1;
+      showSlide(index);
+    });
+    document.querySelector(".next").addEventListener("click", () => {
+      index = index < items.length - 1 ? index + 1 : 0;
+      showSlide(index);
+    });
+    showSlide(index);
+  </script>
+</html>

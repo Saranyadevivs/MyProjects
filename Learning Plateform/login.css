@@ -1,0 +1,149 @@
+* {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  position: fixed; /* Fixed at the top */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #3b82f6, #6a0dad);
+  padding: 15px 40px;
+  height: 90px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar img {
+  height: 70px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-item:hover {
+  color: #e07a00;
+}
+
+.inquiry-button {
+  background-color: #fca311;
+  color: rgb(47, 62, 136);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inquiry-button:hover {
+  background-color: #e07a00;
+  color: white;
+}
+
+/* Prevent scrolling */
+body {
+  background: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Prevent navbar interference */
+  padding-top: 120px; /* Space for the navbar */
+  overflow: hidden;
+}
+
+/* Centered Card */
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #3b82f6, #6a0dad);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  min-height: auto;
+}
+
+.login {
+  color: white;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2f3e88;
+  box-shadow: 0 0 8px rgba(47, 62, 136, 0.5);
+}
+
+/* Button Styling */
+button {
+  width: 50%;
+  padding: 12px;
+  background: linear-gradient(135deg, #e03900, #fca311);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1e2746, #0f172a);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Register Link */
+.text-center a {
+  text-decoration: none;
+  color: #e07a00;
+  font-weight: bold;
+}
+
+.text-center p {
+  color: white;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

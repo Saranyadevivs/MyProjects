@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tuition App</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- AOS Library CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="homestyles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar" data-aos="fade-down">
+      <img src="pictures/logo.jpg" alt="Logo" />
+      <div class="nav-menu">
+        <div class="nav-item" onclick="toggleDropdown()">
+          CLASSES
+          <div class="dropdown" id="dropdownMenu">
+            <a href="kerala.html">KERALA STATE SYLLABUS</a>
+            <a href="kerala.html">CBSE SYLLABUS</a>
+            <a href="kerala.html">ICSE SYLLABUS</a>
+          </div>
+        </div>
+        <div class="nav-item" data-aos="fade-down">DEMO VIDEOS</div>
+        <div class="nav-item" data-aos="fade-down">CAREERS</div>
+        <div class="nav-item" data-aos="fade-down">CONTACT US</div>
+        <div class="nav-item" data-aos="fade-down">CALL US</div>
+        <a href="fees.html" class="nav-item" data-aos="fade-down">FEES</a>
+        <a href="login.html" class="nav-item" data-aos="fade-down">LOGIN</a>
+        <a href="inquiry.html" class="inquiry-button" data-aos="fade-down"
+          >FOR INQUIRY</a
+        >
+      </div>
+    </div>
+
+    <!-- Main Section / Hero -->
+    <header class="main-section" data-aos="fade-up">
+      <h1 class="main-header">Master Learning with MyTuition</h1>
+      <p>Interactive, Engaging & Fun Learning for All Classes</p>
+      <button class="cta-button" data-aos="zoom-in">Start Learning</button>
+    </header>
+    <div class="container">
+      <h1>TRIANGLE Digital Tuition Principles</h1>
+      <p>
+        TRIANGLE My Tuition App digital classes are syllabus and
+        textbook-oriented with animated content for easier understandability.
+        It's not just a regular video class, but tuition brought right into your
+        doorstep, pushing you to nothing short of a TRIANGLE score!
+      </p>
+
+      <button class="btn" onclick="location.href='#'">Know More</button>
+    </div>
+    <div class="containers">
+      <div class="features">
+        <div class="feature">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/CjTCLy44ZRw?si=MxKmf044X-TDh53o"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>Access high-quality recorded tuition videos anytime, anywhere.</p>
+        </div>
+
+        <div class="feature">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/DENRL0eoRWA?si=HmFEpziYrsqJdMCd"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Enhance your learning with interactive practice questions and home
+            tests.
+          </p>
+        </div>
+
+        <div class="feature">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/cxUvNJD4Zuo?si=wB3X4XM7nDb4opI3"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>Stay updated on your child's progress and performance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="virtual-tuition-container">
+      <div class="text-content">
+        <h1>Virtual Tuition Concept</h1>
+        <p>
+          Just as we go out for a walk or catch the bus, we observe many people,
+          things, and colors. It feels so natural taking in the real-world
+          images with no effort. Just as these images are easily captured and
+          remembered by your mind, it is the same for movies and videos.
+        </p>
+
+        <p>
+          So why not for tuition classes too? As little kids, we have learned by
+          observing the world around us. Hence, by virtually teaching the kids
+          and applying their subject contents on real-world objects, you can't
+          help yourself from studying. Wasn’t that the whole idea of tuition
+          classes in the first place? - To be an easy manual to score higher.
+        </p>
+
+        <button class="btn" onclick="location.href='#'">Know More</button>
+      </div>
+
+      <div class="image-content">
+        <img src="pictures/virtual concept.jpg" alt="Virtual Tuition Concept" />
+      </div>
+    </div>
+
+    <div class="container-features">
+      <h1>Application Features</h1>
+      <p class="intro">
+        Our policy is to treat everyone with equal respect, and our tool is
+        simplicity.
+      </p>
+
+      <p class="download">Download Now!</p>
+
+      <div class="grid-container-features">
+        <div class="card-features">
+          <img src="pictures/access.webp" alt="Accessibility" />
+          <div class="card-content-features">
+            <h3>Accessibility</h3>
+            <p>
+              Worldwide accessibility<br />Available in Play Store<br />Easy &
+              free download<br />
+              Virtual consultants across India
+            </p>
+          </div>
+        </div>
+
+        <div class="card-features">
+          <img src="pictures/performance.webp" alt="Evaluation" />
+          <div class="card-content-features">
+            <h3>Evaluation</h3>
+            <p>
+              Mock tests & video analysis<br />Lecture notes & question
+              papers<br />
+              Doubt ticketing system
+            </p>
+          </div>
+        </div>
+
+        <div class="card-features">
+          <img src="pictures/usage.webp" alt="Usage" />
+          <div class="card-content-features">
+            <h3>Usage</h3>
+            <p>
+              Offline learning support<br />Unlimited video access<br />Lower
+              cost than tuition fees
+            </p>
+          </div>
+        </div>
+
+        <div class="card-features">
+          <img src="pictures/unique.webp" alt="Uniqueness" />
+          <div class="card-content-features">
+            <h3>Uniqueness</h3>
+            <p>
+              Save on transportation<br />No security concerns<br />Study at
+              your own convenience
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Heading -->
+    <div
+      class="container d-flex justify-content-center align-items-center flex-column"
+      data-aos="fade-up"
+    >
+      <div class="text text-primary text-center text-dark pt-5">
+        <h1>TESTIMONIALS</h1>
+        <h2>Our Customers Say About Us</h2>
+      </div>
+    </div>
+
+    <!-- Customer Testimonials Cards -->
+    <div class="customer-item">
+      <div class="card-container" data-aos="fade-right" style="width: 20rem">
+        <img
+          class="card-img-top"
+          src="pictures/quotation-mark.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Great application! Most striking feature which I felt in 90 is the
+            provision of PRACTICE QUESTIONS and HOME TEST which aided me to
+            score full marks even in my difficult subjects.
+          </p>
+          <h6>
+            <span class="blue-text">SARATH MENON</span><br />
+            Student, Class 7th, Kasaragod
+          </h6>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" style="width: 20rem">
+        <img
+          class="card-img-top"
+          src="pictures/quotation-mark.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            BRAVO! Even though there are lots of tuition apps available in the
+            market, 901 plus stood out since it provides classes according to
+            the syllabus, and bilingual classes help me a lot in my studies.
+          </p>
+          <h6>
+            <span class="blue-text">ARYA SURESH</span><br />
+            Parent, Class 8th, Kottayam
+          </h6>
+        </div>
+      </div>
+
+      <div class="card-item" data-aos="fade-left" style="width: 20rem">
+        <img
+          class="card-img-top"
+          src="pictures/quotation-mark.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Being a Malayalam medium student, 90+ is a blessing for me as it
+            explains classes in both English and Malayalam at the same time, so
+            I could learn the English translated words as well.
+          </p>
+          <h6>
+            <span class="blue-text">ANJANA DEVADAS</span><br />
+            Student, Class 5th, Idukki
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Supports Multiple Language Classes Section -->
+    <div
+      class="container d-flex justify-content-start align-items-start flex-column"
+      data-aos="fade-right"
+    >
+      <div class="text text-primary text-left text-dark pt-5">
+        <h1>Supports Multiple Language Classes</h1>
+        <h5>
+          90+ My Tuition App allows students to select the language in which
+          they prefer to learn. Students can choose between Hindi and English as
+          their language of instruction. Bilingual lessons are given for state
+          syllabus students, which includes a combination of their regional
+          language and English.
+        </h5>
+        <button class="Check btn">Check Now</button>
+      </div>
+    </div>
+
+    <!-- Courses Section -->
+    <section class="courses" data-aos="flip-up">
+      <h2 class="course-header"><b>Our Courses</b></h2>
+      <h4>For CBSE and State Syllabus 5 to 12 standards</h4>
+      <div class="course-list">
+        <div class="course-card" data-aos="fade-right">
+          <h3>MATHEMATICS</h3>
+          <p>Get the best state syllabus education with expert teachers.</p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="course-card" data-aos="fade-up">
+          <h3>PHYSICS</h3>
+          <p>Comprehensive CBSE learning with video lessons.</p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="course-card" data-aos="fade-left">
+          <h3>CHEMISTRY</h3>
+          <p>In-depth subject understanding with a focus on clarity.</p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="course-card" data-aos="fade-up">
+          <h3>BIOLOGY</h3>
+          <p>Comprehensive CBSE learning with video lessons.</p>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRIANGLE Connect Section -->
+    <div
+      class="container d-flex justify-content-start align-items-start flex-column p-5"
+      data-aos="fade-up"
+    >
+      <h1 class="text-primary">
+        TRIANGLE<span class="text-dark">Connect</span>
+      </h1>
+      <h2 class="mt-3">Creating 10,000 Ed-Tech Entrepreneurs!</h2>
+      <h4 class="mt-4">About TRIANGLE Connect</h4>
+      <p>
+        TRIANGLE My Tuition App brings you an opportunity to be an entrepreneur
+        with <strong>Triangle Connect</strong> for the young and thriving
+        salesmen in the Ed-tech industry. Come and become a part of the
+        fastest-growing Edu-Tech company with the vision of shaping the way we
+        see tuition classes.
+      </p>
+      <p>
+        It’s the new era of digital tuition classes, and you can use your
+        expertise to strategize and plan the business in a particular area. Are
+        you ready for this once-in-a-lifetime opportunity? Come and grow with
+        us.
+      </p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <!-- Download Section -->
+    <div
+      class="container d-flex flex-column align-items-end text-end mt-5"
+      data-aos="fade-left"
+    >
+      <img src="pictures/logo.jpg" alt="Download App" width="200" />
+      <h1 class="download-heading">Download The App Now!</h1>
+      <p>My Tuition App can be freely downloaded from the following sources.</p>
+      <!-- Download Buttons -->
+      <div class="d-flex gap-3">
+        <a href="https://play.google.com/store" target="_blank">
+          <img
+            src="pictures/google playstore.png"
+            alt="Get it on Google Play"
+            width="200"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- Additional Testimonials Section -->
+    <section class="testimonials" data-aos="fade-up">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial-box">
+        <p>"This app made learning so much fun and easy!"</p>
+        <span>- Saranya</span>
+      </div>
+      <div class="testimonial-box">
+        <p>"The best online classes with amazing teachers!"</p>
+        <span>- Hari</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer" data-aos="fade-up">
+      <p>&copy; 2025 MyTuition App | All rights reserved.</p>
+    </footer> -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Virtual Tuition</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-classes">
+          <h4>Our Classes</h4>
+          <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-inner">
+              <ul class="carousel-item">
+                <li><a href="#">CBSE Syllabus</a></li>
+                <li><a href="#">Kerala State Syllabus</a></li>
+                <li><a href="#">Madhya Pradesh State Syllabus</a></li>
+                <li><a href="#">Uttar Pradesh State Syllabus</a></li>
+                <li><a href="#">Karnataka State Syllabus</a></li>
+              </ul>
+              <ul class="carousel-item">
+                <li><a href="#">Delhi State Syllabus</a></li>
+                <li><a href="#">Assam State Syllabus</a></li>
+                <li><a href="#">Arunachal Pradesh State Syllabus</a></li>
+                <li><a href="#">Goa State Syllabus</a></li>
+                <li><a href="#">Haryana State Syllabus</a></li>
+              </ul>
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h4>Subscribe to our newsletter</h4>
+          <p>Stay updated with the latest news.</p>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+
+        <div class="footer-section follow-us">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="pictures/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="pictures/twitter.jpg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="pictures/instagram.avif" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-section payment-options">
+          <h4>Payment Options</h4>
+          <p>We accept secure online payments:</p>
+          <p>Paytm, UPI, Credit/Debit cards, Net Banking.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+        </ul>
+        <p>&copy; 2024 Tringle Virtual Academy. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      let index = 0;
+      const items = document.querySelectorAll(".carousel-item");
+      function showSlide(n) {
+        items.forEach((item) => (item.style.display = "none"));
+        items[n].style.display = "block";
+      }
+      document.querySelector(".prev").addEventListener("click", () => {
+        index = index > 0 ? index - 1 : items.length - 1;
+        showSlide(index);
+      });
+      document.querySelector(".next").addEventListener("click", () => {
+        index = index < items.length - 1 ? index + 1 : 0;
+        showSlide(index);
+      });
+      showSlide(index);
+    </script>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+
+      // Optional: Toggle dropdown if needed
+      function toggleDropdown() {
+        document.getElementById("dropdownMenu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

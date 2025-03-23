@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inquiry Form</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+    <link rel="stylesheet" href="inquiry.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <img src="pictures/logo.jpg" alt="Logo" />
+      <div class="nav-menu">
+        <a href="home.html" class="nav-item">HOME</a>
+        <div class="nav-item">CLASSES</div>
+        <div class="nav-item">DEMO VIDEOS</div>
+        <div class="nav-item">CAREERS</div>
+        <div class="nav-item">CONTACT US</div>
+        <div class="nav-item">CALL US</div>
+        <a href="fees.html" class="nav-item">FEES</a>
+        <a href="login.html" class="nav-item">LOGIN</a>
+        <a href="inquiry.html" class="inquiry-button">FOR INQUIRY</a>
+      </div>
+    </div>
+
+    <!-- Inquiry Form Section -->
+    <div class="card">
+      <h2>Start Your Journey to TRIANGLE!</h2>
+      <p>Fill the form below, and we will reach out to you in no time!</p>
+
+      <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name *" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address *"
+          required
+        />
+        <input
+          type="tel"
+          name="contact"
+          placeholder="Contact Number *"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message *"
+          rows="3"
+          required
+        ></textarea>
+        <button type="submit">Submit Your Queries</button>
+      </form>
+    </div>
+  </body>
+</html>
